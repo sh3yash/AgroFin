@@ -1,0 +1,72 @@
+.consultation-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .consultation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .consultation-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .consultation-form {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .consultation-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .consultation-form p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group .react-datepicker-wrapper {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-group input:focus,
+  .form-group .react-datepicker-wrapper input:focus {
+    border-color: #6c63ff;
+  }
+  
+  .btn-book {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-book:hover {
+    background-color: #444;
+  }
+  

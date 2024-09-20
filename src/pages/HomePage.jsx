@@ -4,7 +4,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
 import carousel1 from '../assets/images/carousel1.jpg';
 import carousel2 from '../assets/images/carousel2.jpg';
 import carousel3 from '../assets/images/carousel3.jpg';
-
+import { Link } from 'react-router-dom';
 const carouselItems = [
   {
     title: "Empowering Farmers",
@@ -43,9 +43,14 @@ const HomePage = () => {
       <div className="hero-section">
         <h1>Welcome to Agri-Finance Platform</h1>
         <p>Your partner in financial growth and support.</p>
+
         <div className="buttons">
-          <button className="btn-appointment">Book an Appointment for Consultation</button>
-          <button className="btn-chat">Chat with AI</button>
+          <Link to="/advisorchat">
+            <button className="btn-appointment">Chat with Advisor</button>
+          </Link>
+          <Link to="/chat">
+            <button className="btn-chat">Chat with AI</button>
+          </Link>
         </div>
       </div>
 

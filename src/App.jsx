@@ -10,13 +10,16 @@ import LoanApplicationPage from './pages/LoanApplicationPage';
 import LoanManagementPage from './pages/LoanManagementPage';
 import FinancialHealthPage from './pages/FinancialHealthPage';
 import PaymentHistoryPage from './pages/PaymentHistoryPage';
-import FinancialAdvicePage from './pages/FinancialAdvicePage';
+
 import ProfilePage from './pages/ProfilePage';
 import ContactUsPage from './pages/ContactUsPage';
 import HomePage from './pages/HomePage';
 import TradingPlatform from './pages/TradingPlatform';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Consultation from './pages/Consultation';
+import Chat from './pages/Chat';
+import ConsultPage from './pages/ConsultPage';
+import AdvisorChat from './pages/AdvisorChat';
 
 
 function App() {
@@ -34,10 +37,14 @@ function App() {
           <Route path="/manage-loan" element={<LoanManagementPage />} />
           <Route path="/financial-health" element={<FinancialHealthPage />} />
           <Route path="/payment-history" element={<PaymentHistoryPage />} />
-          <Route path="/financial-advice" element={<FinancialAdvicePage />} />
+
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/tradingplatform" element={<TradingPlatform />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/consultation" element={<Consultation/>} />
+          <Route path="/chat" element={<Chat/>} />  
+          <Route path="/consultpage" element={<ConsultPage/>} />  
+          <Route path="/advisorchat" element={<AdvisorChat/>} />     
         </Routes>
         <Footer />
       </div>

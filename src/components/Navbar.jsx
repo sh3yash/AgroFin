@@ -10,9 +10,9 @@ const Navbar = () => {
       </div>
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/consultpage">Consultation</Link>
         <Link to="/tradingplatform">Trading Platform</Link>
-        <Link to="/financial-health">Financial Health</Link>
+        <Link to="/consultation">Apply Loans</Link>
         <Link to="/contact-us">Contact Us</Link>
         <Link to="/login" className="login-btn">Login</Link>
       </div>

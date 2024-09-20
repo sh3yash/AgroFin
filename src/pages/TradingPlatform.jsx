@@ -1,84 +1,63 @@
 import React, { useState } from 'react';
 import './TradingPlatform.css';
 
-const items = [
-  {
-    id: 1,
-    name: "Organic Tomatoes",
-    description: "Fresh organic tomatoes sourced from local farms.",
-    price: "$3.00",
-  },
-  {
-    id: 2,
-    name: "Farm Fresh Eggs",
-    description: "Free-range eggs with rich yolks and great taste.",
-    price: "$2.50",
-  },
-  {
-    id: 3,
-    name: "Honey",
-    description: "Pure, raw honey collected from wildflowers.",
-    price: "$5.00",
-  },
-  {
-    id: 4,
-    name: "Herbs Bundle",
-    description: "A bundle of fresh herbs including basil, parsley, and cilantro.",
-    price: "$4.00",
-  },
-];
+const products = {
+  vegetables: [
+    { name: 'Carrot', description: 'Fresh and organic carrots.', image: 'carrot.jpg', price: '$3.50/kg' },
+    { name: 'Potato', description: 'High-quality potatoes.', image: 'potato.jpg', price: '$1.20/kg' },
+  ],
+  fruits: [
+    { name: 'Apple', description: 'Juicy and delicious apples.', image: 'apple.jpg', price: '$2.00/kg' },
+    { name: 'Banana', description: 'Ripe bananas full of energy.', image: 'banana.jpg', price: '$1.50/kg' },
+  ],
+  seeds: [
+    { name: 'Sunflower Seeds', description: 'Perfect for snacking.', image: 'sunflower-seeds.jpg', price: '$5.00/kg' },
+    { name: 'Pumpkin Seeds', description: 'Rich in nutrients.', image: 'pumpkin-seeds.jpg', price: '$4.00/kg' },
+  ]
+};
 
-const TradingPlatform = () => {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
+const MarketPlace = () => {
+  const [category, setCategory] = useState('vegetables');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thank you for joining our marketplace, ${name}!`);
-    setName('');
-    setEmail('');
+  const handleCategoryChange = (newCategory) => {
+    setCategory(newCategory);
   };
 
   return (
-    <div className="trading-platform">
-      <header className="header">
-        <h1>Farmers Market</h1>
-        <p>Your one-stop destination for fresh produce!</p>
-      </header>
+    <div className="marketplace">
+      <h1>Welcome to Our Farmers' Market</h1>
+      
+      {/* Toggle Switch */}
+      <div className="category-switch">
+        <button onClick={() => handleCategoryChange('vegetables')} className={category === 'vegetables' ? 'active' : ''}>Vegetables</button>
+        <button onClick={() => handleCategoryChange('fruits')} className={category === 'fruits' ? 'active' : ''}>Fruits</button>
+        <button onClick={() => handleCategoryChange('seeds')} className={category === 'seeds' ? 'active' : ''}>Seeds</button>
+      </div>
 
-      <main className="item-list">
-        {items.map(item => (
-          <div className="item-card" key={item.id}>
-            <h2>{item.name}</h2>
-            <p>{item.description}</p>
-            <span className="price">{item.price}</span>
-            <button className="buy-button">Buy Now</button>
+      {/* Product Cards */}
+      <div className="product-grid">
+        {products[category].map((product, index) => (
+          <div className="product-card" key={index}>
+            <img src={`../assets/images/${product.image}`} alt={product.name} />
+            <h3>{product.name}</h3>
+            <p>{product.description}</p>
+            <p className="price">{product.price}</p>
+            <button className="buy-btn">Buy Now</button>
           </div>
         ))}
-      </main>
+      </div>
 
-      <section className="join-marketplace">
+      {/* Join Market Place Section */}
+      <div className="join-marketplace">
         <h2>Join Our Marketplace</h2>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <button type="submit" className="submit-button">Submit</button>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <button type="submit">Submit</button>
         </form>
-      </section>
+      </div>
     </div>
   );
 };
 
-export default TradingPlatform;
+export default MarketPlace;
