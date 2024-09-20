@@ -1,0 +1,134 @@
+/* Contact Page General */
+.contact-page {
+    padding: 50px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Find Us Section */
+  .find-us-section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .find-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .find-us-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .find-us-cards .card {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .find-us-cards .card h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .find-us-cards .card p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .find-us-cards .icon {
+    font-size: 2.5rem;
+    color: #28a745;
+    margin-top: 10px;
+  }
+  
+  /* Card Image */
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Read More Button */
+  .read-more-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Get in Touch Section */
+  .get-in-touch-section {
+    text-align: center;
+  }
+  
+  .get-in-touch-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .contact-form .form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .contact-form .form-group textarea {
+    resize: none;
+  }
+  
+  .submit-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  

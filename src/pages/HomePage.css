@@ -1,0 +1,141 @@
+/* Hero Section */
+.hero-section {
+    background: url('../assets/images/homeimg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    position: relative;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn-appointment, .btn-chat {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-chat {
+    background-color: #ffc107;
+  }
+  
+  /* Carousel Section */
+  .carousel-section {
+    position: relative;
+    margin: 50px 0;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 300px;
+  }
+  
+  .carousel-content {
+    text-align: center;
+    color: #333;
+    width: 80%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-content h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  .carousel-content p {
+    font-size: 1.2rem;
+  }
+  
+  .btn-learn-more {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffd700; /* Gold */
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  .carousel-control:hover {
+    color: #ffd700;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .testimonial-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card .quote-icon {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  

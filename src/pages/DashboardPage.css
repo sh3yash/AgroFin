@@ -1,0 +1,18 @@
+.dashboard-page {
+    padding: 20px;
+  }
+  
+  .loans-section,
+  .financial-health-section {
+    margin-bottom: 30px;
+  }
+  
+  .loan-card,
+  .financial-health-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
