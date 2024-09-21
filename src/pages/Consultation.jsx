@@ -20,10 +20,6 @@ const Consultation = () => {
             <h3>Family Income</h3>
             <p>Stable family income ensures better repayment capacity, improving credit score.</p>
           </div>
-          <div className="factor-card">
-            <h3>Financial Stability</h3>
-            <p>Strong financial standing increases your likelihood of securing a loan.</p>
-          </div>
         </div>
       </section>
 
@@ -54,8 +50,6 @@ const Consultation = () => {
           <button type="submit" className="submit-btn">Submit Loan Application</button>
         </form>
       </section>
-
-
     </div>
   );
 };

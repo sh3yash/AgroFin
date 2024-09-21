@@ -16,7 +16,7 @@ const products = {
   ]
 };
 
-const MarketPlace = () => {
+const TradingPlatform = () => {
   const [category, setCategory] = useState('vegetables');
 
   const handleCategoryChange = (newCategory) => {
@@ -25,7 +25,7 @@ const MarketPlace = () => {
 
   return (
     <div className="marketplace">
-      <h1>Welcome to Our Farmers' Market</h1>
+      <h1 id="trader-heading">Welcome to Our Farmers' Market</h1>
       
       {/* Toggle Switch */}
       <div className="category-switch">
@@ -60,4 +60,4 @@ const MarketPlace = () => {
   );
 };
 
-export default MarketPlace;
+export default TradingPlatform;

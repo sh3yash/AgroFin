@@ -1,11 +1,11 @@
+// src/pages/ContactUsPage.js
 import React, { useState } from 'react';
 import './ContactUsPage.css';
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
-import locationimg from '../assets/images/location.jpg'
-import callimg from '../assets/images/contact.jpg'
-import emailimg from '../assets/images/email.jpg'
-
-
+import locationimg from '../assets/images/location.jpg';
+import callimg from '../assets/images/contact.jpg';
+import emailimg from '../assets/images/email.jpg';
+import Map from '../pages/Map.jsx';
 
 const ContactUs = () => {
   const [isExpanded, setIsExpanded] = useState({
@@ -89,6 +89,12 @@ const ContactUs = () => {
           </div>
           <button type="submit" className="submit-btn">Submit</button>
         </form>
+      </div>
+
+      {/* Map Section */}
+      <div className="map-section">
+        <h2>Our Location on Map</h2>
+        <Map />
       </div>
     </div>
   );

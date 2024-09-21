@@ -107,4 +107,9 @@
   .login-btn:hover {
     background-color: #218838;
   }
+
+  #username{
+    background-color: white;
+    border-width: 0px;
+  }
   

@@ -4,11 +4,17 @@
   justify-content: space-between;  /* Space between logo, links, and login */
   align-items: center;
   padding: 15px 30px;
-  position: sticky;
+  position: fixed; /* Fixed position */
   top: 0;
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease;
+}
+
+/* Logo size adjustment */
+.nav-logo img {
+  width: 80px; /* Adjust logo size if needed */
+  height: auto;
 }
 
 /* Pseudo-element for blurred background */
@@ -62,7 +68,7 @@
 }
 
 .nav-links a:hover {
-  color: #FFD700; /* Gold hover color */
+  color: aqua; /* Gold hover color */
   background-color: rgba(255, 255, 255, 0.1); /* Slight transparent background on hover */
 }
 
@@ -72,7 +78,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background: #FFD700;
+  background: aqua;
   transition: width 0.3s;
   position: absolute;
   bottom: 0;
@@ -86,6 +92,7 @@
 /* Login button on the extreme right */
 .login-btn {
   margin-left: auto; /* Pushes login to the extreme right */
+  margin-right: 15px; /* Right margin for spacing */
   background-color: #28a745; /* Green background for the login button */
   padding: 10px 20px;
   border-radius: 20px; /* Rounded button for modern look */
@@ -115,14 +122,31 @@
   .navbar {
     padding: 10px 15px;
   }
+
+  .nav-toggle {
+    display: flex; /* Show toggle button on mobile */
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
   .nav-links {
-    gap: 20px; /* Reduce space between links on smaller screens */
+    display: flex; /* Show links in vertical layout */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    gap: 10px; /* Space between links */
+  }
+
+  .nav-links a {
+    text-align: center; /* Center links */
+    width: 100%; /* Full width links */
   }
 
   .login-btn {
-    padding: 8px 15px; /* Adjust button size on smaller screens */
+    width: 100%; /* Full width for login button */
+    margin-right: 0; /* Remove right margin */
   }
 }

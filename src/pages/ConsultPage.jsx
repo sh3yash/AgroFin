@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './ConsultPage.css'; // Create and style this CSS file as needed.
-import consultImage from '../assets/images/contact.jpg'; // Replace with the correct image path
+import consultImage from '../assets/images/consultation.jpg'; // Replace with the correct image path
 
 const ConsultPage = () => {
   const [startDate, setStartDate] = useState(null);
