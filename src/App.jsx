@@ -10,9 +10,10 @@ import HomePage from './pages/HomePage';
 import TradingPlatform from './pages/TradingPlatform';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Consultation from './pages/Consultation';
-import Chat from './pages/AIChat';
+import AIChat from './pages/AIChat';
 import ConsultPage from './pages/ConsultPage';
 import AdvisorChat from './pages/AdvisorChat';
+import { SparklesPreview } from './pages/SparklesPreview';
 
 
 function App() {
@@ -29,9 +30,10 @@ function App() {
           <Route path="/tradingplatform" element={<TradingPlatform />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/consultation" element={<Consultation/>} />
-          <Route path="/chat" element={<Chat/>} />  
+          <Route path="/aichat" element={<AIChat/>} />  
           <Route path="/consultpage" element={<ConsultPage/>} />  
-          <Route path="/advisorchat" element={<AdvisorChat/>} />     
+          <Route path="/advisorchat" element={<AdvisorChat/>} /> 
+          {/* <Route path='/sparkle' element={<SparklesPreview/>} />      */}
         </Routes>
         <Footer />
       </div>

@@ -6,27 +6,17 @@
 
 /* Hero Section */
 .hero-section {
-  background: url('../assets/images/homeimg.jpg') no-repeat center center/cover;
-  text-align: center;
-  padding: 120px 20px;
-}
-/* General Styles */
-body {
-  background-color: #121212;
-  color: #e0e0e0;
-  font-family: Arial, sans-serif;
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.homepage {
-  font-family: Arial, sans-serif;
-}
-
-/* Hero Section */
-.hero-section {
+.hero-content {
+  position: absolute;
   text-align: center;
-  padding: 50px;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  z-index: 2;
 }
 
 .hero-section h1 {
@@ -124,16 +114,16 @@ body {
   color: #03a9f4;
 }
 
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #2c2c2c;
+}
+
 .testimonial-cards {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-}
-
-/* Testimonials Section */
-.testimonials-section {
-  background-color: #2c2c2c;
 }
 
 .testimonial-card {
@@ -150,7 +140,6 @@ body {
   color: #03a9f4;
 }
 
-/* Buttons for Testimonial Cards */
 .testimonial-card p {
   color: #b0bec5;
 }

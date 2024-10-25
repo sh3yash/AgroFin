@@ -3,6 +3,7 @@ import './HomePage.css';
 import { FaQuoteLeft } from 'react-icons/fa';
 import AdvisorChat from './AdvisorChat';
 import AIChat from './AIChat';
+import Spline from '@splinetool/react-spline';
 
 const HomePage = () => {
   const [showAdvisorChat, setShowAdvisorChat] = useState(false);
@@ -21,16 +22,20 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="hero-section">
-        <h1>Welcome to Agri-Finance Platform</h1>
-        <p>Your trusted partner in agricultural financial growth and success.</p>
+        {/* Spline Component as the background */}
+        <Spline scene="https://prod.spline.design/kvCimAJ9veX72BIG/scene.splinecode" />
+        <div className="hero-content">
+          <h1>Welcome to Agri-Finance Platform</h1>
+          <p>Your trusted partner in agricultural financial growth and success.</p>
 
-        <div className="buttons">
-          <button className="btn-appointment" onClick={openAdvisorChat}>
-            Chat with Advisor
-          </button>
-          <button className="btn-chat" onClick={openAIChat}>
-            Chat with AI
-          </button>
+          <div className="buttons">
+            <button className="btn-appointment" onClick={openAdvisorChat}>
+              Chat with Advisor
+            </button>
+            <button className="btn-chat" onClick={openAIChat}>
+              Chat with AI
+            </button>
+          </div>
         </div>
       </div>
 
@@ -58,16 +63,12 @@ const HomePage = () => {
         <h2>About Us</h2>
         <div className="about-content">
           <p>
-            Agri-Finance Platform is dedicated to empowering farmers by providing
-            tailored financial solutions. We believe in using our expertise in
-            finance and agriculture to help you grow your farming business. Our
-            team of experts is always here to provide guidance, support, and
+            Agri-Finance Platform is dedicated to empowering farmers by providing tailored financial solutions. We believe in using our expertise in
+            finance and agriculture to help you grow your farming business. Our team of experts is always here to provide guidance, support, and
             innovative solutions for a better agricultural future.
           </p>
           <p>
-            Founded in 2020, we have helped thousands of farmers manage their
-            finances effectively, secure loans, and access the latest
-            agricultural technologies.
+            Founded in 2020, we have helped thousands of farmers manage their finances effectively, secure loans, and access the latest agricultural technologies.
           </p>
         </div>
       </div>
